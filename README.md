@@ -1,3 +1,3 @@
-# wall_e_website_fe
+# The `wall_e` Website (React frontend)
 
-This frontend will be implemented in React.
+This repository holds the source code for the `wall_e` [website](https://walle.sfucsss.org)'s frontend.
