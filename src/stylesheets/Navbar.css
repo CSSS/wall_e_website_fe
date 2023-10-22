@@ -1,0 +1,99 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: var(--navbar-height);
+	line-height: var(--navbar-height);
+	border-bottom: 1px solid #202020;
+	background-color: #404040;
+	color: #f0f0f0;
+}
+
+.navbarSpacer {
+	width: 100vw;
+	height: var(--navbar-height);
+}
+
+.navbar .leading {
+	position: absolute;
+	top: 50%;
+	left: max(8px, (100vw - var(--page-width)) / 2);
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	height: var(--navbar-height);
+}
+
+.navbar .trailing {
+	position: absolute;
+	top: 50%;
+	right: max(8px, (100vw - var(--page-width)) / 2);
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	height: var(--navbar-height);
+}
+
+.navbar .paths {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	height: var(--navbar-height);
+}
+
+.navbar img {
+	margin: 0 4px;
+}
+
+.navbar h1, .navbar h2, .navbar h3, .navbar p {
+	margin: 0 4px;
+	font-size: 16pt;
+	font-weight: 400;
+}
+
+.navbar h2 {
+	font-size: 14pt;
+}
+
+.navbar h3 {
+	font-size: 12pt;
+}
+
+.navbar p {
+	font-size: 10pt;
+}
+
+.navbar a {
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.navbar .paths a {
+	display: block;
+	margin: 0 1px;
+	padding: 0 16px;
+	height: var(--navbar-height);
+	background-color: #404040;
+	color: #f0f0f0;
+	font-size: 14pt;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+.navbar .paths a:hover, .navbar .paths a.selected {
+	background-color: #484848;
+}
