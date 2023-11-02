@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/CSSS/wall_e_website_fe/static/css/main.b6d9cc5a.css",
+    "main.js": "/CSSS/wall_e_website_fe/static/js/main.b5114dfc.js",
+    "static/media/csss.svg": "/CSSS/wall_e_website_fe/static/media/csss.3908ad12680bb8d168386b33d72d5eac.svg",
+    "index.html": "/CSSS/wall_e_website_fe/index.html",
+    "main.b6d9cc5a.css.map": "/CSSS/wall_e_website_fe/static/css/main.b6d9cc5a.css.map",
+    "main.b5114dfc.js.map": "/CSSS/wall_e_website_fe/static/js/main.b5114dfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b6d9cc5a.css",
+    "static/js/main.b5114dfc.js"
+  ]
+}
