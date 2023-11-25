@@ -7,10 +7,11 @@ import axios from 'axios';
 // In-house dependencies
 import Navbar from './components/Navbar';
 import UserRow from './components/UserRow';
+import Button from './components/Button';
 
 // Graphics and stylesheets
 import WallE from './graphics/walle.png';
-import CSSS from './graphics/csss.svg';
+import CSSS from './graphics/csss.gif';
 import './App.css';
 
 const WALL_E_API_URL = 'https://api.walle.sfucsss.org/api';
@@ -29,7 +30,8 @@ function App() {
           response.data.results.map((user, position) => {
             return {
               position: position + 1,
-              username: user.username,
+              name: user.name,
+              avatar: user.avatar,
               points: user.points,
               levelNumber: user.level_number,
               messageCount: user.message_count,
@@ -60,9 +62,8 @@ function App() {
           <h1>Leaderboard</h1>
         ]}
         trailing={[
-          <a href='https://sfucsss.org'>
-            <img src={CSSS} height='32' alt='CSSS' />
-          </a>
+          <Button img={CSSS} text='Discord' href='https://discord.gg/sfucsss' />,
+          <Button text='Website' href='https://sfucsss.org' />,
         ]}
       />
       <div class='page'>

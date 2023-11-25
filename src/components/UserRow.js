@@ -5,7 +5,8 @@ import '../stylesheets/UserRow.css';
 function UserRow(props) {
   const {
     position,
-    username,
+    name,
+    avatar,
     points,
     levelNumber,
     messageCount,
@@ -17,8 +18,8 @@ function UserRow(props) {
     <div className={`userRow ${position%2 === 0 ? '' : 'alt'}`}>
       <div className="left">
         <h1 className="position">#<b>{position}</b></h1>
-        { /* <img src={image} alt={username} /> */ }
-        <h1 className="username">{username}</h1>
+        <img src={avatar} alt={name} />
+        <h1 className="name">{name}</h1>
         <h1 className="levelNumber">Level {levelNumber}</h1>
       </div>
       <div className="right">

@@ -1,0 +1,29 @@
+a.button, button.button {
+	display: block;
+	line-height: 24px;
+	border: 2px solid var(--midground-color);
+	outline: none;
+	border-radius: 12px;
+	padding: 4px 12px;
+	color: var(--foreground-color);
+	background-color: var(--background-color);
+	font-size: 10pt;
+	font-weight: 400;
+	text-decoration: none;
+	transition:
+		background-color ease 0.25s,
+		border-color ease 0.25s;
+}
+
+a.button img, button.button img {
+	display: inline;
+	float: left;
+	height: 24px;
+	margin-left: -4px;
+}
+
+a.button:hover, button.button:hover {
+	cursor: pointer;
+	background-color: var(--background-color-alt);
+	border-color: var(--midground-color-alt);
+}

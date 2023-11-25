@@ -10,13 +10,21 @@
 
 	/* Navbar */
 	--navbar-height: 48px;
+
+	/* Colors */
+	--background-color:      #18181c;
+	--background-color-alt:  #202028;
+	--midground-color:       #404048;
+	--midground-color-alt:   #606069;
+	--foreground-color:      #f0f0f8;
+	--foreground-color-alt:  #80808a;
 }
 
 body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Inter', sans-serif;
-	background-color: #383838;
+	background-color: var(--background-color);
 }
 
 .page {
