@@ -1,0 +1,10 @@
+input.uiInput {
+	outline: none;
+	border: 1px solid var(--background-color-alt2);
+	border-radius: 6px;
+	padding: 4px 6px;
+	background-color: var(--background-color-alt);
+	color: var(--foreground-color);
+	font-size: 11pt;
+	font-weight: 500;
+}

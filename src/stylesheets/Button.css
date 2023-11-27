@@ -1,9 +1,9 @@
-a.button, button.button {
+a.uiButton, button.uiButton {
 	display: block;
 	line-height: 24px;
 	border: 2px solid var(--midground-color);
-	outline: none;
 	border-radius: 12px;
+	outline: none;
 	padding: 4px 12px;
 	color: var(--foreground-color);
 	background-color: var(--background-color);
@@ -15,15 +15,25 @@ a.button, button.button {
 		border-color ease 0.25s;
 }
 
-a.button img, button.button img {
+a.uiButton img, button.uiButton img {
 	display: inline;
 	float: left;
 	height: 24px;
 	margin-left: -4px;
 }
 
-a.button:hover, button.button:hover {
+a.uiButton:hover, button.uiButton:hover {
 	cursor: pointer;
 	background-color: var(--background-color-alt);
 	border-color: var(--midground-color-alt);
+}
+
+.uiButtonRow {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	justify-items: flex-start;
+	align-content: center;
+	align-items: center;
 }

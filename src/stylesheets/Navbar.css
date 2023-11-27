@@ -57,6 +57,10 @@
 	line-height: 16px;
 }
 
+.navbar h1 {
+	font-weight: 500;
+}
+
 .navbar h2 {
 	font-size: 14pt;
 }
