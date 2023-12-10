@@ -15,7 +15,7 @@ import CSSS from './graphics/csss.gif';
 import Mural from './graphics/mural.png';
 import './App.css';
 
-const WALL_E_API_URL    = 'https://api.walle.sfucsss.org/api';
+const WALL_E_API_URL    = 'https://api.walle.sfucsss.org';
 const DEFAULT_PAGE_SIZE = 20;
 const MAX_PAGE_SIZE     = 100;
 
