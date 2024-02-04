@@ -1,20 +1,36 @@
 import React from 'react';
+import { Flex } from 'csss-react-lib';
 
-import '../stylesheets/Navbar.css';
-
-function Navbar(props) {
-  const { leading, center, trailing } = props;
+export function Navbar(props) {
+  const { children } = props;
 
   return (
-    <>
-      <div className='navbar'>
-        <div className='leading'>{leading}</div>
-        <div className='center'>{center}</div>
-        <div className='trailing'>{trailing}</div>
-      </div>
-      <div className='navbarSpacer'></div>
-    </>
+    <div
+      style={{
+        position: 'sticky',
+        zIndex: '99',
+        top: 0,
+        left: 0,
+        width: '100vw',
+        height: '64px',
+        borderBottom: '1px solid var(--csss-border-color)',
+        backgroundColor: 'var(--csss-background-color)'
+      }}
+    >
+      <Flex.Container
+        flow='row nowrap'
+        justifyContent='space-between'
+        alignItems='center'
+        style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          width: 'var(--csss-page-width)'
+        }}
+      >
+        {children}
+      </Flex.Container>
+    </div>
   );
 }
-
-export default Navbar;

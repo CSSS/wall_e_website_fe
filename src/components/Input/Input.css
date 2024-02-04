@@ -1,4 +1,4 @@
-input.uiInput {
+input {
 	outline: none;
 	border: 1px solid var(--background-color-alt2);
 	border-radius: 6px;
@@ -7,4 +7,5 @@ input.uiInput {
 	color: var(--foreground-color);
 	font-size: 11pt;
 	font-weight: 500;
+	height: 16px;
 }
