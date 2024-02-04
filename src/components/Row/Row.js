@@ -3,7 +3,7 @@ import { Flex, helpers } from 'csss-react-lib';
 import './Row.css';
 
 export function Row(props) {
-  const { user, isMobileDevice } = props;
+  const { id, user, isMobileDevice } = props;
   const {
     position,
     name,
@@ -21,6 +21,7 @@ export function Row(props) {
 
   return (
     <Flex.Container
+      id={id}
       flow='row nowrap'
       justifyContent='space-between'
       alignItems='center'

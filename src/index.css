@@ -13,10 +13,27 @@
 	--csss-background-color: var(--background-color);
 	--csss-border-color: var(--midground-color);
 	--csss-color: var(--foreground-color);
-	--csss-button-transparent-idle-color: var(--background-color-alt2);
 	--csss-button-transparent-border-color: var(--midground-color);
 	--csss-button-transparent-hover-color: var(--midground-color);
 	--csss-button-transparent-active-color: var(--midground-color-alt);
+}
+
+html {
+	scroll-padding-top: 80px;
+}
+
+.csss-button {
+	line-height: 24px;
+	padding: 6px 10px;
+}
+
+.csss-button.small {
+	line-height: 16px;
+	padding: 6px;
+}
+
+.csss-button.transparent {
+	background-color: var(--background-color-alt2);
 }
 
 img.mural {
@@ -41,7 +58,16 @@ section a {
 	color: var(--foreground-color-alt);
 }
 
-.csss-button {
-	line-height: 24px;
-	padding: 6px 10px;
+input {
+	outline: none;
+	border: 1px solid var(--background-color-alt2);
+	border-radius: 6px;
+	padding: 4px 6px;
+	background-color: var(--background-color-alt);
+	color: var(--foreground-color);
+	font-family: var(--csss-font-family-monospace), monospace;
+	font-size: 11pt;
+	font-weight: 500;
+	width: 64px;
+	height: 16px;
 }
